@@ -141,7 +141,22 @@ namespace ComicBookLibraryManager.Data
                 {
                     context.Entry(comicBook.Series).State = EntityState.Unchanged;
                 }
+
+                foreach (ComicBookArtist artist in comicBook.Artists)
+                {
+                    if (artist.Artist != null && artist.ArtistId > 0)
+                    {
+                        context.Entry(artist.Artist).State = EntityState.Unchanged;
+                    }
+
+                    if (artist.Role != null && artist.RoleId >0)
+                    {
+                        context.Entry(artist.Role).State = EntityState.Unchanged;
+                    }
+                }
                 context.SaveChanges();
+
+
             }
         }
 
