@@ -1,0 +1,10 @@
+C:\Users\anija\Source\Repos\comic-book-library-manager\ComicBookLibraryManager\bin\Debug\ComicBookLibraryManager.exe.config
+C:\Users\anija\Source\Repos\comic-book-library-manager\ComicBookLibraryManager\bin\Debug\ComicBookLibraryManager.exe
+C:\Users\anija\Source\Repos\comic-book-library-manager\ComicBookLibraryManager\bin\Debug\ComicBookLibraryManager.pdb
+C:\Users\anija\Source\Repos\comic-book-library-manager\ComicBookLibraryManager\bin\Debug\EntityFramework.dll
+C:\Users\anija\Source\Repos\comic-book-library-manager\ComicBookLibraryManager\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anija\Source\Repos\comic-book-library-manager\ComicBookLibraryManager\bin\Debug\EntityFramework.xml
+C:\Users\anija\Source\Repos\comic-book-library-manager\ComicBookLibraryManager\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anija\Source\Repos\comic-book-library-manager\ComicBookLibraryManager\obj\Debug\ComicBookLibraryManager.csprojResolveAssemblyReference.cache
+C:\Users\anija\Source\Repos\comic-book-library-manager\ComicBookLibraryManager\obj\Debug\ComicBookLibraryManager.exe
+C:\Users\anija\Source\Repos\comic-book-library-manager\ComicBookLibraryManager\obj\Debug\ComicBookLibraryManager.pdb
