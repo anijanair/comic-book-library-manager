@@ -166,7 +166,26 @@ namespace ComicBookLibraryManager.Data
         /// <param name="comicBook">The ComicBook entity instance to update.</param>
         public static void UpdateComicBook(ComicBook comicBook)
         {
-            // TODO
+            using (var context = new Context())
+            {
+                // One method to Update is given below
+                // ComicBook ComicBookToUpdate = context.ComicBooks.Find(comicBook.Id); 
+
+                //context.Entry(ComicBookToUpdate).CurrentValues.SetValues(comicBook);
+
+                context.ComicBooks.Attach(comicBook);
+
+                var comicBookEntry = context.Entry(comicBook);
+
+                comicBookEntry.State = EntityState.Modified;
+
+                //comicBookEntry.Property("IssueNumber").IsModified = false;
+
+                context.Entry(comicBook).State = EntityState.Modified;
+
+                context.SaveChanges();
+
+            }
         }
 
         /// <summary>
