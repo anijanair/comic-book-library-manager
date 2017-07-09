@@ -180,10 +180,8 @@ namespace ComicBookLibraryManager.Data
                 comicBookEntry.State = EntityState.Modified;
 
                 //comicBookEntry.Property("IssueNumber").IsModified = false;
-
-                context.Entry(comicBook).State = EntityState.Modified;
-
-                context.SaveChanges();
+                
+               context.SaveChanges();
 
             }
         }
@@ -194,7 +192,17 @@ namespace ComicBookLibraryManager.Data
         /// <param name="comicBookId">The comic book ID to delete.</param>
         public static void DeleteComicBook(int comicBookId)
         {
-            // TODO
+            using (var context = new Context())
+            {
+                // One method to delete an entity
+                //ComicBook comicBook = context.ComicBooks.Find(comicBookId);
+                //context.ComicBooks.Remove(comicBook);
+
+                var comicBook = new ComicBook() { Id = comicBookId };
+                context.Entry(comicBook).State = EntityState.Deleted;
+
+                context.SaveChanges();
+            }
         }
     }
 }
